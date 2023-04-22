@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+</head>
+<body>
+    <h1>Formulário para cadastro de informações do cliente</h1>
+    <label for="progresso">Preenchimento do formulário</label>
+    <progress id="progresso" max="100" value="20">20%</progress>
+
+    <form action="formulario.html" method="post">
+
+    <label>Data de nascimento: <input type="date" name="calendário"></label>
+    
+    <label for="e-mail">E-mail: </label> 
+    <input type="email" id="e-mail" name="email">
+    
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+    
+    <label for="mês">Mês de Adesão: </label>
+    <input type="month" id="mês" name="mes">
+    
+    <label for="numero">Quantos filmes você pretende assistir semanalmente? </label> 
+    <input type="number" id="numero" min="0" max="7">
+    
+    <label for="cor">Escolha a cor da sua área de trabalho: </label> 
+    <input type="color" id="cor" name="cores">
+    
+    <label for="urlComBr">Endereço da sua página pessoal: </label> 
+    <input type="url" name="urlComBr" id="urlComBr"
+    placeholder="http://endereco.com.br"
+    pattern=".+\.com.br" required>
+    
+    <label for="data">Insira a data e hora que prefere utilizar o cupom de desconto da primeira compra: </label> <input type="datetime-local" id="data" name="data" >
+    <label>Selecione os gêneros da sua preferência: </label>
+    <input type="checkbox" id="genero1" name="genero1" value="Ação">
+    <label for="gênero1"> Ação</label><br>
+    <input type="checkbox" id="genero2" name="genero2" value="Drama">
+    <label for="genero2"> Drama</label><br>
+    <input type="checkbox" id="genero3" name="genero3" value="Romance">
+    <label for="genero3"> Romance</label>
+    <input type="checkbox" id="genero4" name="genero4" value="Comédia">
+    <label for="gênero4"> Comédia</label><br>
+    <input type="checkbox" id="genero5" name="genero5" value="Suspense"> 
+    <label for="genero5"> Drama</label><br>
+    <input type="checkbox" id="genero6" name="genero6" value="Terror">
+    <label for="genero6"> Terror</label>
+    <input type="checkbox" id="genero6" name="genero6" value="Ficção científica">
+    <label for="genero6"> Ficção científica</label>
+    </form>
+</body>
+</html>
