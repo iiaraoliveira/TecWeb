@@ -1,0 +1,59 @@
+@media screen and (min-width:0px) and (max-width: 320px){
+    div{
+        background-color: black;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width: 480px){
+    div{
+        background-color: lightskyblue;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 600px){
+    div{
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 768px){
+    div{
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 800px){
+    div{
+        background-color: brown;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width: 1024px){
+    div{
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1280px){
+    div{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width:1281px) and (max-width: 1440px){
+    div{
+        background-color: red;
+    }
+}
+
+@media not (orientation:landscape) {
+    .paisagem{
+        display: none;
+    }
+}
+@media (orientation: landscape) {
+    .paisagem{
+        background-color: purple;
+        display: block;
+    }
+}
