@@ -1,0 +1,672 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/*exercício 1*/
+/* #container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 2*/
+
+/* #container{
+    display: flex;
+    flex-direction:row;         
+    align-items: end;
+    gap: 20px;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid red;
+    
+}
+#quatro,
+#cinco{
+    display: none;
+}
+ */
+
+/*Exercício 3*/
+
+/* #container{
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: end;
+    gap: 20px;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 4*/
+
+/* #container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 5*/
+/* 
+#container{
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:left;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#dois,
+#tres,
+#quatro,
+#cinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+} */
+
+/*Exercício 6*/
+
+/* #container{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#dois,
+#tres,
+#quatro,
+#cinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+} */
+
+/*Exercício 7*/
+
+/* #container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 8*/
+
+/* #container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 9*/
+
+/* #container{
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 10*/
+
+/* #container{
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 11*/
+
+/* #container{
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#dois,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/*Exercício 12*/
+/* 
+#container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid red;
+} 
+
+#cinco{
+    display: none;
+} */
+
+/*Exercício 13*/
+
+/* #container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+#dois > p{
+    font-size: 50px;
+}
+
+#cinco{
+    display: none;
+} */
+
+/*Exercício 14*/
+/* #container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid red;
+    order: -1;
+} 
+
+#cinco{
+    display: none;
+} */
+
+/* Exercicio 15 */
+
+/* #container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#dois{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid red;
+} 
+
+#tres{
+    order: -1;
+}
+
+#cinco{
+    display: none;
+} */
+
+/* Exercício 16 */
+
+/* #container{
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+    alig;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid red;
+    align-self: flex-start;
+} 
+
+#cinco{
+    display: none;
+} */
+
+/* Exercício 17 */
+
+/* #container{
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+    alig;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid red;
+    align-self: flex-end;
+} 
+
+#cinco{
+    display: none;
+} */
+
+/* Exercício 18 */
+
+/* #container{
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#um,
+#tres,
+#quatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: 1px solid red;
+    alig;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid red;
+    align-self: stretch;
+} 
+
+#cinco{
+    display: none;
+} */
+
+/* Exercicio 19 */
+
+/* #container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    padding:2rem;
+}
+
+#um,
+#tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: orange;
+    border: 1px solid red;
+}
+
+#quatro,
+#cinco{
+    display: none;
+} */
+
+/* Exercício 20 */
+
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#um,
+#tres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+#dois {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+#quatro,
+#cinco {
+  display: none;
+}
