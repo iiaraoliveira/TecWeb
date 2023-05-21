@@ -1,0 +1,872 @@
+@charset "UTF-8";
+
+:root {
+  --rosaclaro: #f7e9bfd6;
+  --laranja: #f28322;
+  --rosa: #f2bf91;
+  --vermelho: #d94436;
+  --rosamedio: #f2ada7;
+  --vinho: rgb(119, 31, 31);
+
+  --fonte-padrao: sans-serif, Tahoma, Arial, Verdana, Helvetica;
+  --fonte-logo: "BreeSerif", Tahoma, sans-serif;
+  --fonte-teste: Georgia, serif;
+}
+
+@font-face {
+  font-family: "BreeSerif";
+  src: url("./fonts/BreeSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("./fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+* {
+  font-family: "PoppinsRegular", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--rosaclaro);
+  overflow-x: hidden;
+}
+
+h2 {
+  color: var(--vinho);
+}
+
+main {
+  max-width: 950px;
+  margin: auto;
+  background-color: var(--rosa);
+}
+
+header {
+  background-color: var(--rosamedio);
+  /* display: flex;
+  min-height: 100px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-left: 10px;
+  width: 100%; */
+}
+
+h1 {
+  color: var(--vermelho);
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: var(--fonte-logo);
+  text-shadow: 2px 2px 0px #0202024b;
+}
+
+h3 {
+  height: 5rem;
+  background-color: var(--vermelho);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+  padding: 0px;
+  overflow: visible;
+}
+
+p {
+  color: var(--vermelho);
+  margin: auto;
+  font-family: var(--fonte-padrao);
+}
+
+.barra-sanduiche {
+  display: none;
+}
+
+button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--vermelho);
+  overflow: hidden;
+  padding: 14px 16px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+.menu {
+  overflow-x: visible;
+}
+
+.menu > a {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.menu > a:hover {
+  background-color: var(--rosa);
+  color: var(--vermelho);
+}
+
+.pesquisaNav {
+  float: right;
+  border: 1px solid black;
+  padding: 1px;
+  margin-right: 16px;
+  font-size: 17px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.192);
+  border-radius: 7px;
+}
+/* Missao Visao Valores */
+.mvv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 990px;
+  margin: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: var(--rosamedio);
+  padding: 10px 40px;
+  border: 3px;
+  margin-top: 10px;
+}
+
+.col{
+  background-color: var(--rosamedio);
+}
+.mvvfilho {
+  border-style: solid;
+  border-color: var(--rosa);
+  justify-content: center;
+  align-items: center;
+}
+
+.mvvfilho > h2 {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.mvvfilho > p {
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+/*Receitas e anuncios*/
+.post {
+  justify-content: space-between;
+  align-items: start;
+  display: flex;
+}
+
+.prop {
+  max-width: 300px;
+  min-height: 610px;
+  margin-top: 10px;
+}
+
+.postPai {
+  /* display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  min-height: 580px;
+  flex-wrap: wrap; */
+  justify-content: center;
+  align-items: last center;
+  background-color: var(--rosamedio);
+  padding: 10px 40px;
+  border: 3px;
+  margin-top: 10px;
+}
+
+.postfilho {
+  border-style: solid;
+  border-color: var(--rosa);
+  width: auto;
+  padding: 12px 5px;
+  margin-top: 10px;
+}
+
+.postfilho > h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.postfilho > p {
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+/* Mural, Adiciona receita e Social */
+.info1 {
+  /* display: grid; */
+  padding-top: 20px;
+  gap: 1rem;
+  /* grid-template-columns: 2fr 1fr; */
+}
+/* 
+.destaque {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} */
+
+.social {
+  background-color: var(--rosamedio);
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+/* .add-receita {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  overflow: hidden;
+} */
+
+.Navegador {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+
+
+.destaque .mural {
+  background-color: var(--rosamedio);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+#add {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#add > img {
+  max-width: 170px;
+  padding-right: 2rem;
+}
+
+#texto-rec > h4 {
+  font-size: 1.2rem;
+}
+
+#texto-rec > p {
+  font-size: 0.9rem;
+}
+
+.add-receita {
+  background-color: #f2ada7bb;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.addReceitaDescricao {
+  padding: 10px;
+  text-align: justify;
+}
+
+form {
+  text-align: center;
+}
+
+.addinput {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.container-navegador {
+  background-color: var(--rosamedio);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-navegador a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-navegador > ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: black;
+  list-style-type: armenian;
+}
+.container-navegador ul li {
+  padding: 1rem;
+}
+
+/*Formulário de add receita*/
+
+.forminscricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.inscricao {
+  background-color: #f2ada7bb;
+  text-align: center;
+  /* width: 60%; */
+}
+
+.incricaoTitulo {
+  padding: 20px 15px;
+  background-color: var(--vermelho);
+}
+
+.corpoDaInscricao {
+  padding: 40px;
+}
+
+.margem {
+  margin-bottom: 10px;
+}
+
+.forminput {
+  width: 180px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.labelform {
+  display: flex;
+  width: 72px;
+}
+
+.formulario {
+  text-align: left;
+}
+strong {
+  padding: 10px 0px 20px 0px;
+}
+
+.limpar {
+  background: #f2bf91;
+  border: 0;
+  margin: 10px;
+  color: #d94436;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50% -50%);
+}
+
+.botao {
+  font-size: 1.2em;
+  background: #d94436;
+  border: 0;
+  margin: 10px;
+  color: white;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50% -50%);
+}
+
+Avaliaçoes
+.sectionAvaliacao {
+   height: 680px; 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sectionAvaliacao > h2 {
+  padding: 40px;
+}
+
+.buttonAvaliacao {
+  float: right;
+  color: #fff;
+  background-color: #d94436;
+  width: 30%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.sectionAvaliation {
+  display: flex;
+  flex-direction: row;
+  border: 3px;
+  border-radius: 5px;
+}
+
+.avaliacao {
+  width: 330px;
+  height: 442px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  box-shadow: 1px 3px 13px black;
+  border-radius: 10px;
+  background-color: #f2bf91;
+}
+
+.foto {
+   height: 50px; 
+  width: 50px; 
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.avaliacao > p {
+  margin: 10px 0px 0px 20px;
+}
+.avaliacao > h1 {
+  margin: 20px;
+}
+.stars {
+  padding: 0px 0px 0px 20px;
+  float: inline-end;
+}
+
+
+/*Notícias*/
+
+.novidades .noticia {
+  background-color: var(--rosamedio);
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+#bloco-noticia {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2rem 0;
+}
+
+#bloco-noticia > img {
+  min-width: 170px;
+  height: 100%;
+  padding-right: 2rem;
+}
+
+#txt-noticia > h4 {
+  color: var(--vinho);
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+#txt-noticia > p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* AQUI COMEÇA O SOBRE EDITORIAL E SOCIAL */
+
+/* .SobreEditorialSocial {
+  display: flex;
+  padding: 20px;
+} */
+
+.sobre {
+  /* width: 50%; */
+  padding: 10px;
+  text-align: justify;
+  /* margin: 20px; */
+}
+
+.sobre > h2 {
+  padding: 0px 0px 20px 0px;
+}
+
+.editorial {
+  padding: 10px;
+  text-align: justify;
+  margin: 20px;
+}
+.editorialDescricao > img {
+  border-radius: 50%;
+}
+
+.mbES {
+  /* margem entre a foto e a frase */
+  margin: 0px 10px 0px 0px;
+}
+
+.editorial > h2 {
+  padding: 0px 0px 20px 0px;
+}
+.editorialDescricao {
+  display: flex;
+  padding: 10px 0px 0px 0px;
+  font-size: small;
+}
+
+.socialFinal {
+  padding: 20px;
+}
+
+.imgSocial {
+  /* Serve para deixar a imagem e a frase na mesma linha e dar melhor espaçamento*/
+  display: flex;
+  padding: 10px;
+}
+
+.container-social {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  /* height: 100%; */
+}
+
+/* .container-social iframe {
+  height: 100%;
+  width: 100%;
+} */
+
+/* AQUI TERMINA O SOBRE EDITORIAL E SOCIAL */
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vermelho);
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7rem;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+
+footer img {
+  width: 150px;
+  height: 100%;
+}
+
+footer p {
+  color: white;
+}
+
+#rodape {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid #f28322;
+}
+
+#rodape a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+  color: white;
+  padding: 1rem;
+}
+
+.publi {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mvvfilho {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* OK */
+  .mvvfilho > p {
+    text-align: center;
+  }
+
+  .post {
+    display: flex;
+    align-items: start;
+    height: fit-content;
+  }
+
+  .prop {
+    width: 240px;
+    height: 500px;
+    margin-top: 20px;
+  }
+
+  .postfilho {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  body {
+    margin: 0px;
+  }
+  .menu {
+    float: none;
+    display: block;
+    text-align: left;
+    height: 3px;
+    margin: 0;
+    padding: 14px;
+    width: auto;
+  }
+
+  .menu > a {
+    display: none;
+  }
+
+  .login {
+    display: none;
+  }
+
+  header > img {
+    width: 90px;
+    height: 100%;
+  }
+
+  .barra-sanduiche {
+    width: 50px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .cook > h1 {
+    font-size: 1.5rem;
+  }
+
+  .cook > p {
+    font-size: small;
+  }
+
+  .mvv {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--rosamedio);
+    padding: 10px 40px;
+    border: 3px;
+    margin-top: 10px;
+  }
+
+  .mvvfilho {
+    max-width: 100%;
+  }
+
+  .mvv > p {
+    text-align: center;
+  }
+
+  .post {
+    justify-content: center;
+  }
+
+  header {
+    width: auto;
+  }
+  .imagens {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+  }
+
+  .publi {
+    display: none;
+  }
+
+  h3 {
+    height: 5rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+  /* Começo mural, social navegador e add receita */
+  .info1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social {
+    order: 1;
+  }
+
+  .Navegador {
+    order: 1;
+  }
+  /* Fim mural, social navegador e add receita */
+
+  /*Noticias*/
+  #bloco-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #bloco-noticia img {
+    max-width: 170px;
+    padding-bottom: 1rem;
+  }
+
+  #txt-noticia > h4 {
+    font-size: 1.1rem;
+  }
+
+  #txt-noticia > p {
+    font-size: 0.9rem;
+  }
+
+  /* avaliações */
+  .sectionAvaliacao {
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .sectionAvaliacao > h2 {
+    padding: 10px;
+    height: 40px;
+  }
+
+  .buttonAvaliacao {
+    float: right;
+    color: #fff;
+    background-color: #d94436;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .sectionAvaliation {
+    display: flex;
+    flex-direction: column;
+    border: 3px;
+    border-radius: 5px;
+  }
+
+  .avaliacao {
+    width: 305px;
+    height: 380px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    box-shadow: 1px 3px 13px black;
+    border-radius: 10px;
+    background-color: #f2bf91;
+  }
+
+  .foto {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+
+  .avaliacao > p {
+    margin: 10px 0px 0px 20px;
+  }
+  .avaliacao > h1 {
+    padding: 0px 0px 0px 10px;
+  }
+  .stars {
+    padding: 0px 0px 0px 20px;
+    float: inline-end;
+  }
+
+  /* INICIO DO SOBRE EDITORIAL E SOCIAL MOBILE*/
+  .SobreEditorialSocial {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sobre {
+    width: 300px;
+    height: 450px;
+    padding: 0px;
+  }
+
+  /* FIM DO SOBRE EDITORIAL E SOCIAL MOBILE */
+
+  /* Inicio footer */
+  footer {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+  #rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.7rem;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  #add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #add > img {
+    max-width: 170px;
+    padding-right: 0rem;
+  }
+}

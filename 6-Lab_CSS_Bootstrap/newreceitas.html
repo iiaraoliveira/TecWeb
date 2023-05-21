@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookTime</title>
+    <link rel="stylesheet" href="./estilo/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./imagens/COOK TIME.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <div class="row">
+            <div class="col-2">
+              <img
+                src="./imagens/COOK TIME (1).png"
+                alt="CookTime"
+                width="90px"
+                height="80px"
+              />
+            </div>
+            <div class="col-8">
+              <h1>COOKTIME</h1>
+              <p>Sempre a melhor receita</p>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn">Login</button>
+              <button type="button" class="btn">Inscreva-se</button>
+            </div>
+          </div>
+        </header>
+        <div class="row">
+          <div class="col-12">
+            <button class="barra-sanduiche">&#9776;</button>
+            <div class= "barra">
+              <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Notícias</a>
+                <a href="#">Culinária Nacional</a>
+                <a href="#">Culinária Internacional</a>
+                <a href="#">Seja membro</a>
+              </nav>
+              <input class="pesquisaNav" type="text" placeholder="Pesquisar" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-auto">
+          <img class="imagens" src="./imagens/cookie.jpeg" alt="Cookies" width="100%" />
+        </div>
+        <div class="container text-center">
+          <div class="row justify-content-md-center">
+            <div class="col">
+              <div class="mvvfilho">
+                <h2 class="mb">MISSÃO</h2>
+                <p class="mb">
+                Ajudar nossos leitores a cozinhar com simplicidade e prazer.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mvvfilho">
+                <h2 class="mb">VISÃO</h2>
+                <p class="mb">Ser seu "caderno" de receitas favorito.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mvvfilho">
+                <h2 class="mb">VALORES</h2>
+                            <p>
+                Agimos com propósito, entregamos resultados com excelência,
+                construímos juntos e trabalhamos com simplicidade.
+                            </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4" style="overflow-y: hidden;">
+              <img class="prop" src="./imagens/Publi1.jpg" width="320px" height="100%"/>
+            </div>
+            <div class="col-4">
+              <section class="postPai">
+          <div class="postfilho">
+            <!--Criar uma classe para essa div, e fazer o background pelo css-->
+            <h2>Delícias Brasileiras</h2>
+            <p>
+              Descubra e aprenda a fazer diversos pratos presentes na nossa
+              culinária nacional. Desde tacacá, coxinha e cuscuz paulista, até
+              tortas doces, sobremesas e brigadeiro.
+            </p>
+          </div>
+          <div class="postfilho">
+            <!--Criar uma classe para essa div, e fazer o background pelo css-->
+            <h2>Sabores ao Redor do Mundo</h2>
+            <p>
+              Conheça e viaje para os mais diversos países do mundo por meio de
+              seus pratos tradicionais. Você pode ir da Colômbia para a China,
+              conhecer todos os sabores da culinária mexicana e muito mais.
+            </p>
+          </div>
+          <div class="postfilho">
+            <!--Criar uma classe para essa div, e fazer o background pelo css-->
+            <h2>Alimentação Saudável</h2>
+            <p>Conheça pratos deliciosos para cozinhar e incluir na sua dieta.</p>
+          </div>
+        </section>
+            </div>
+            <div class="col-4" style="overflow-y: hidden;">
+              <img class="prop" src="./imagens/publi2.jpeg" width="320px" height="100%" />
+            </div>
+          </div>
+        </div>
+         <!--Mural de pessoas que adicionaram receitas no site.
+        Sugestão: Usar galeria de imagens para colocar tudo junto-->
+    <section class="info1">
+      <div class="container">
+        <div class="row">
+          <div class="mural col-8" style = "background:#f2ada7">
+            <h3>Mural de receitas adicionadas</h3>
+            <div id="add" style="overflow-y: hidden;">
+              <img src="./imagens/sopa.jpg" alt="Sopa de Mandioquinha" />
+              <div id="texto-rec" style="overflow-y: hidden;">
+                <h4>Sopa de Mandioquinha</h4>
+                <p>Adicionada à 4 horas</p>
+              </div>
+            </div>
+  
+            <div id="add">
+              <img src="./imagens/morangoffe.png" alt="Morangoffe" />
+              <div id="texto-rec" style="overflow-y: hidden;">
+                <h4>Morangoffe</h4>
+                <p>Adicionada à 20 horas</p>
+              </div>
+            </div>
+  
+            <div id="add">
+              <img src="./imagens/sopaParaguai.jpg" alt="Sopa Paraguaia" />
+              <div id="texto-rec" style="overflow-y: hidden;">
+                <h4>Sopa Paraguaia</h4>
+                <p>Adicionada à 1 dia</p>
+              </div>
+            </div>
+  
+            <div id="add">
+              <img src="./imagens/mousse.jpg" alt="Mousse de Maracuja com Chocolate" />
+              <div id="texto-rec" style="overflow-y: hidden;">
+                <h4>Mousse de Maracuja com Chocolate</h4>
+                <p>Adicionada à 1 dia</p>
+              </div>
+            </div>
+          </div>
+          <nav class="Navegador col-4">
+            <h3>Navegador</h3>
+            <div class="container-navegador">
+              <ul>
+                <li><a href="#">As favoritas do time</a></li>
+                <li><a href="#">Para amantes de doces</a></li>
+                <li><a href="#">Festival cultural</a></li>
+                <li><a href="#">Regionalismo culinário</a></li>
+                <li><a href="#">As melhores veganas</a></li>
+                <li><a href="#">Conhecendo o mundo</a></li>
+              </ul>
+            </div>
+          </nav>
+  
+        </div>
+
+      </div>
+      <div class="destaque container" >
+        <div class="row">
+            <!--Aqui o usuario vai add a receita -->
+        <section class="add-receita col-8">
+          <h3>Faça parte da nossa comunidade e adicione uma receita</h3>
+          <div class="addReceitaDescricao">
+            <p> Escolha uma imagem de capa para sua receita, logo após escreva sua receita na caixa de texto abaixo. Não
+              esqueça de clicar em enviar! </p>
+          </div>
+          <form action="Receitas.html" method="post">
+            <div id="imagem">
+              <!-- <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label> -->
+              <input class="addinput" type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
+            </div>
+            <div id="texto">
+
+              <div>
+                <textarea class="addinput" name="receita" rows="2" cols="30"></textarea>
+                <input class="addinput" type="submit" value="Enviar receita">
+                <input class="addinput" type="reset" value="Limpar">
+              </div>
+          </form>
+        </section>
+        <div class="social col-4">
+          <h3>Social</h3>
+          <div class="container-social">
+            <iframe src="https://www.youtube.com/embed/mhDl19m8tn0" title="YouTube video player" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="saibaMais">
+            <button type="button">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section>
+
+    <!--Formulário de incricao no curso-->
+    <section class="forminscricao container">
+      <aside class="inscricao row justify-content-md-center">
+        <div class="col-10">
+          <div class="incricaoTitulo">
+            <h3 class="margem">
+              Quer aprimorar suas habilidades na cozinha e não sabe
+              por onde começar?
+            </h3>
+          </div>
+          <div class="corpoDaInscricao">
+            <h4 class="margem" style="overflow-y: hidden;">
+              Com o nosso curso, você poderá desenvolver suas habilidade culinárias
+            </h4 class="margem" style="overflow-y: hidden;">
+            <h2 class="margem" style="overflow-y: hidden;">Inscreva-se pelo formulário disponível abaixo:</h2>
+            <form class="formulario" action="Receitas.html" method="post">
+              <label class="labelform" for="e-mail">E-mail: </label>
+              <input class="forminput" type="email" id="e-mail" name="email" /> <br>
+  
+              <label class="labelform" for="username">Nome:</label>
+              <input class="forminput" type="text" id="username" name="username" /> <br>
+  
+              <label class="labelform" for="pwd">Senha:</label>
+              <input class="forminput" type="password" id="pwd" name="pwd" /> <br>
+  
+              <label class="labelform" for="telefone">Telefone:</label>
+              <input class="forminput" type="tel" id="telefone" placeholder="(99) 99999-9999" /><br>
+  
+              <strong>Indique qual é o seu nível de conhecimento na cozinha</strong> <br>
+              <input type="radio" id="n0" name="nivel" value="N0" />
+              <label class="forminput" for="n0">Não sei fazer nada.</label><br>
+  
+              <input type="radio" id="n1" name="nivel" value="N1" />
+              <label class="forminput" for="n1">Consigo seguir algumas receitas que procuro</label> <br>
+  
+              <input type="radio" id="n2" name="nivel" value="N2" />
+              <label class="forminput" for="n2">Quero dar mais sabor as minhas receitas.</label> <br>
+  
+              <input class="botao" type="submit" value="Confirmar inscrição" /> <br>
+              <input class="forminput limpar" type="reset" value="Limpar" /><br>
+            </form>
+          </div>
+        </div>
+        
+      </aside>
+    </section>
+        <div class="container text-center">
+          <h3> Últimas Avaliações</h3>
+          <div class="row justify-content-md-center">
+            <div class="col-4">
+                  <div class="foto">
+                    <img src="./imagens/servletrecuperafoto.gif" width="50px" height="50px" />
+                  </div>
+                  <h1>Fisher Ferreira</h1>
+                  <p>
+                    Ficou show! Trabalho nota 10! Aprendi a fazer pão de queijo nesse
+                    site.
+                  </p>
+                  <div class="stars">
+                    <img src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp" width="100px"
+                      height="40px" />
+                    <p class="data"><small>08/12/2022</small></p>
+                  </div>
+                  <!--Estrelas de Avaliação -->
+                </div>
+      
+            <div class="col-4">
+              <div class="foto">
+                <img src="./imagens/perfil1.jpg" width="50" height="50" />
+              </div>
+              <h1>Laila Sousa</h1>
+              <p>
+                Me sinto inspirada a fazer receitas deliciosas já que vocês ensinam
+                de uma forma tão fácil. Eu até já contribui com o blog deixando uma
+                receita que lembra minha infância, torta de limão.
+              </p>
+              <div class="stars">
+                <img src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp" wwidth="100px"
+                  height="40px" />
+                <p class="data">18/01/2023</p>
+              </div>
+          </div>
+          <div class="col-4">
+            <div class="foto">
+              <img src="./imagens/perfil2.jpg" width="50" height="50" />
+            </div>
+            <h1>Juliana Valentino</h1>
+            <p>Melhor site de receitas</p>
+            <div class="stars">
+              <img src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp" width="100px"
+                height="40px" />
+              <p class="data">24/04/2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row row-cols-1">
+          <div class="col-4"> 
+            <button type="button" class="btn btn-danger">Adicionar receita + </button>
+          </div>
+          </div>
+        </div>
+        <!--Ultimas noticias-->
+    <container class="container"  >
+      <div class="noticia row row-cols-1" style="background: #f2ada7;">
+        <h3 class="col-12">Últimas Notícias</h3>
+        <div id="bloco-noticia">
+          <img src="./imagens/tacaca.png" alt="Tacacá" width="80px" height="70px" />
+          <div id="txt-noticia">
+            <h4>
+              20 receitas de origem indígena para você conhecer e prepará-las
+            </h4>
+            <p>
+              A gastronomia brasileira é formada por influências de diversas
+              culturas. e uma das que mais está presente na nossa rotina é a dos
+              povos indígenas. Você pode não ter reparado, mas há diversos
+              alimentos que consumimos diariamente que são de origem nativa.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="bloco-noticia">
+          <img src="./imagens/molhos.jpg" alt="Molhos para Salada" width="80px" height="70px" />
+          <div id="txt-noticia">
+            <h4>
+              Simples e deliciosos: 8 receitas de molhos para salada do CookTime
+            </h4>
+            <p>
+              Salada mão é algo que agrade a todos os gostos. Mas é possível
+              tornar esse alimento mais apetitoso com o uso de molhos, por
+              exemplo. Nesse artigo, trazemos 8 molhos fáceis para você mesmo
+              fazer em casa. Eles vão te conquistar e tornar a sua refeição mais
+              saborosa.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div id="bloco-noticia">
+          <img src="./imagens/churrasco.jpg" alt="Churrasco" width="80px" height="70px" />
+          <div id="txt-noticia">
+            <h4>
+              Calculadora de churrasco: quantos quilos de carne por pessoa e o
+              que não pode faltar
+            </h4>
+            <p>
+              Se você é brasileiro, provavelmente já precisou organizar um
+              churrasco e se deparou com o seguinte desafio: Quantos kilos de
+              carne o meu churrasco deve ter para que todos saiam satisfeitos?
+              Pensando nisso, trouxemos uma calculadora de churrasco, que
+              permite, com base na quantidade de pessoas, saber o quantitativo
+              médio necessário. Além disso, nesse artigo, trazemos algumas dicas
+              de como melhorar o seu churrasco.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </container>
+    <container class="SobreEditorialSocial container">
+      <div class="row"> 
+        <div class="sobre col-6">
+          <h2>Quem somos</h2>
+          <p>
+            Saiba mais sobre o CookTime O CookTime é o mais completo site de
+            receitas do Brasil e, desde 2022, reúne uma comunidade de
+            apaixonados por comida. A ideia era criar um site colaborativo, uma
+            espécie de caderno de receitas compartilhadas que reunisse os
+            tradicionais pratos de família e as novas descobertas na cozinha.
+            Hoje, um número cada vez mais crescente de brasileiros passam por
+            aqui todos os dias e nossa missão é ajudar esses leitores a cozinhar
+            com simplicidade e prazer.
+          </p>
+        </div>
+        <div class="editorialSocial col-6">
+          <div class="editorial">
+            <h2>Editorial</h2>
+            <div class="editorialDescricao"><img class="mbES" src="./imagens/raquel.jfif" width="30px" height="30px" />
+              <p> <b>Redação:</b> Raquel Luis Duarte</p>
+            </div>
+            <div class="editorialDescricao"><img class="mbES" src="./imagens/iara.jpg" width="30px" height="30px" />
+              <p> <b>Pesquisa:</b> Iara Costa Oliveira</p>
+            </div>
+            <div class="editorialDescricao"><img class="mbES" src="./imagens/servletrecuperafoto.gif" width="30px"
+                height="30px" />
+              <p> <b>Gerente:</b> Prof. Fisher Ferreira </p>
+            </div>
+          </div>
+          <div class="socialFinal">
+            <div class="imgSocial">
+              <img img class="mbES" src="./imagens/facebook.png" alt="Facebook" width="20px" height="20px" />
+              <p>CookTime Brasil</p>
+            </div>
+  
+            <div class="imgSocial">
+              <img img class="mbES" src="./imagens/instagram.png" alt="Instagram" width="20px" height="20px" />
+              <p>@cooktimebr</p>
+            </div>
+  
+            <div class="imgSocial">
+              <img img class="mbES" src="./imagens/youtube.png" alt="Youtube" width="20px" height="20px" />
+              <p>@cooktimebr</p>
+            </div>
+          </div>
+        </div>
+  
+
+      </div>
+      
+    </container>
+    <!-- AQUI TERMINA O SOBRE EDITORIAL E SOCIAL -->
+    <footer class="container">
+      <div class="row justify-content-md-center" id="sumario">
+        <img class="col-3" src="./imagens/logotipo.png" alt="CookTime">
+      </div>
+      <div class="row justify-content-md-center" id="rodape">
+        <a href="#">QUEM SOMOS</a>
+        <a href="#">POLÍTICA DE PRIVACIDADE</a>
+        <a href="#">TERMOS DE USO</a>
+        <a href="#">ANUNCIE</a>
+        <a href="#">CONTATO</a>
+      </div>
+      <p>Site criado por Iara Costa e Raquel Duarte</p>
+    </footer>
+    </main>
+
+  </body>
+</html>
