@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      $(function () {
+        $(".button-collapse").sideNav();
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <header class="card-panel red lighten-4">
+      <div class="row container">
+        <div class="valign-wrapper">
+          <div class="col s12 m4 l2">
+            <img
+              class="circle resposive-img"
+              src="./imagens/COOK TIME.png"
+              alt="CookTime"
+              width="90px"
+              height="auto"
+            />
+          </div>
+          <div class="col s12 m4 l8">
+            <h3 class="pink-text">COOKTIME</h3>
+            <p class="pink-text">Sempre a melhor receita</p>
+          </div>
+          <div class="col s12 m4 l2 padding:10px">
+            <a class="pink lighten-2 btn">Inscreva-se</a>
+            <a class="pink lighten-2 btn">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-wrapper pink lighten-2">
+        <a href="#" data-activates="menu-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Culinária Nacional</a></li>
+          <li><a href="#">Culinária Internacional</a></li>
+          <li><a href="#">Seja membro</a></li>
+        </ul>
+        <ul class="side-nav" id="menu-mobile">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Culinária Nacional</a></li>
+          <li><a href="#">Culinária Internacional</a></li>
+          <li><a href="#">Seja membro</a></li>
+        </ul>
+        <div class="nav-wrapper">
+          <div class="right hide-on-med-and-down">
+            <form>
+              <div class="input-field">
+                <div class="row">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
